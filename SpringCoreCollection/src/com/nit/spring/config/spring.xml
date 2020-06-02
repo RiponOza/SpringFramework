@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="smp" name="SimpleBean" class="com.nit.spring.beans.SimpleBean">
+		<constructor-arg name="date" ref="dt" />
+		<constructor-arg name="cities">
+			<array>
+			  <value>Tezpur</value>
+			  <value>Tezpur</value>
+			  <value>Hyderabad</value>
+			  <value>Bangalore</value>
+			  <value>Chennai</value>
+			  <value>Mumbai</value>
+			</array>
+		</constructor-arg>
+		
+		<constructor-arg name="courseList">
+		  <list>
+		  	<value>Spring Framework</value>
+		  	<value>Spring Framework</value>
+		  	<value>Spring Framework</value>
+		  	<value>Spring Framework</value>
+		  	<value>Core Java</value>
+		  	<value>Advanced Java</value>
+		  	<value>Hibernate</value>
+		  </list>
+		</constructor-arg>
+		
+		<constructor-arg name="empId">
+			<set>
+				<value>emp0001</value>
+				<value>emp0001</value>
+				<value>emp0002</value>
+				<value>emp0001</value>
+				<value>emp0002</value>
+				<value>emp0004</value>
+				<value>emp0003</value>
+			</set>
+		</constructor-arg>
+		
+		<constructor-arg name="empInfo">
+			<map>
+				<entry key="01"><value>Naresh</value></entry>
+				<entry key="02"><value>Ripon Oza</value></entry>
+				<entry key="03"><value>Zaynep</value></entry>
+				<entry key="04"><value>Kamel</value></entry>
+				<entry key="04"><value>Murad</value></entry>
+				<entry key="04"><value>Batchet</value></entry>
+			</map>
+		</constructor-arg>
+		
+		<constructor-arg name="databaseDetails">
+			<props>
+				<prop key="usr">Ripon</prop>
+				<prop key="pwd">root</prop>
+				<prop key="db-name">DB001</prop>
+				<prop key="driverClass">com.jdbc.mysql</prop>
+			</props>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="dt" name="date" class="java.util.Date" />
+	
+</beans>
