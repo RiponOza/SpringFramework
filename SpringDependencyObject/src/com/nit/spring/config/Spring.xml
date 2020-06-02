@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="stu" name="student" class="com.nit.spring.beans.Student">
+		<constructor-arg name="studentID" value="ST002348" />
+		<constructor-arg name="studentName" value="Ripon Oza" />
+		<constructor-arg name="studentEmail" value="riponoja9@gmail.com" />
+		<constructor-arg name="studentCourse" ref="crs" />
+	</bean>
+	
+	<bean id="crs" name="course" class="com.nit.spring.beans.Course">
+		<constructor-arg name="courseId" value="crs2234" />
+		<constructor-arg name="courseCost" value="8000" />
+		<constructor-arg name="date" ref="dt" />
+		<constructor-arg name="courseList">
+			<list>
+			  <value>CoreJava</value>
+			  <value>AdvancedJava</value>
+			  <value>SpringFramework</value>
+			  <value>Hibernate</value>
+			  <value>Angular</value>
+			</list>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="dt" name="date" class="java.util.Date" />
+	
+</beans>
