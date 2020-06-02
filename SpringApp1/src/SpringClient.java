@@ -18,8 +18,8 @@ public class SpringClient {
 		BeanFactory factory = new XmlBeanFactory(resource);
 		
 		// getting the spring bean objects from container using id
-		EmployeeBean employee = (EmployeeBean) factory.getBean("emp");
 		AddressBean address = (AddressBean) factory.getBean("add");
+		EmployeeBean employee = (EmployeeBean) factory.getBean("emp");
 		System.out.println(employee);
 		System.out.println(address);
 		System.out.println("===========================================");
@@ -32,8 +32,9 @@ public class SpringClient {
 		System.out.println("===========================================");
 		
 		// getting the spring bean objects from container using classname
-		EmployeeBean employee3 = (EmployeeBean) factory.getBean(EmployeeBean.class);
-		AddressBean address3 = (AddressBean) factory.getBean(AddressBean.class);
+		// In this procedure tupe casting is not required
+		EmployeeBean employee3 = factory.getBean(EmployeeBean.class);
+		AddressBean address3 = factory.getBean(AddressBean.class);
 		System.out.println(employee3);
 		System.out.println(address3);
 		System.out.println("===========================================");

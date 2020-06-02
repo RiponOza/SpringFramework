@@ -14,9 +14,9 @@
 	</bean>
 	
 	<bean id="add" name="address" class="com.nit.beans.AddressBean">
-		<property name="doorNo" value="5" />
-		<property name="streetName" value="JamuguriStreet" />
-		<property name="cityName" value="Tezpur" />
+		<constructor-arg name="doorno" value="5" />
+		<constructor-arg  name="streetName" value="JamuguriStreet" />
+		<constructor-arg  name="cityName" value="Tezpur" />
 	</bean>
 	
 	<bean id="cust" name="customer" class="com.nit.beans.CustomerBean">

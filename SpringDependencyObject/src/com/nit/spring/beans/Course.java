@@ -9,6 +9,7 @@ public class Course {
 	private String courseList[];
 	private Date date;
 	
+	// constructor
 	public Course() {
 		System.out.println("Course class default Constructor called !!!!\n");
 	}

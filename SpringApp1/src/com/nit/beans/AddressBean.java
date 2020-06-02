@@ -6,30 +6,19 @@ public class AddressBean {
 	private String streetName;
 	private String cityName;
 	
-	public String getDoorNo() {
-		return doorNo;
+	static {
+		System.out.println("Address Class static block.");
 	}
 	
-	public void setDoorNo(String doorNo) {
-		this.doorNo = doorNo;
-	}
-	
-	public String getStreetName() {
-		return streetName;
-	}
-	
-	public void setStreetName(String streetName) {
+	// constructor
+	public AddressBean(String doorno, String streetName, String cityName) {
+		doorNo = doorno;
 		this.streetName = streetName;
-	}
-	
-	public String getCityName() {
-		return cityName;
-	}
-	
-	public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
-	
+
+
+
 	@Override
 	public String toString() {
 		return "AddressBean [doorNo=" + doorNo + ", streetName=" + streetName + ", cityName=" + cityName + "]";

@@ -7,10 +7,12 @@ public class Student {
 	private String studentEmail;
 	private Course studentCourse;
 	
+	// default constructor
 	public Student() {
 		System.out.println("Student class default Constructor called !!!!\n");
 	}
 	
+	// perameterized costructor
 	public Student(String studentID, String studentName, String studentEmail, Course studentCourse) {
 		System.out.println("Student class perameterised Constructor called !!!!\n");
 		this.studentID = studentID;

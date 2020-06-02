@@ -6,6 +6,10 @@ public class CustomerBean {
 	private String customerID;
 	private String customerLocation;
 	
+	static {
+		System.out.println("CustomerBean Class static block.");
+	}
+	
 	public String getCustomerName() {
 		return customerName;
 	}

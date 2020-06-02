@@ -9,6 +9,10 @@ public class EmployeeBean {
 	private float empSalary;
 	private AddressBean employeeAddress;
 	
+	static {
+		System.out.println("EmployeeBean Class static block.");
+	}
+	
 	public void setEmployeeAddress(AddressBean employeeAddress) {
 		this.employeeAddress = employeeAddress;
 	}

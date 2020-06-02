@@ -16,6 +16,7 @@ public class SimpleBean {
 	private Map<Integer,String> empInfo;
 	private Properties databaseDetails;
 
+	// constructor
 	public SimpleBean(String[] cities, List<String> courseList, Date date, Set<String> empId,
 			Map<Integer, String> empInfo, Properties databaseDetails ) {
 		this.cities = cities;
