@@ -26,7 +26,7 @@ public class Course {
 		for(String temp : courseList) {
 			System.out.println(temp);
 		}
-		System.out.println(date);
+		System.out.println("\n" + date);
 	}
 
 	
