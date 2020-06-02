@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="emp" name="employee" class="com.nit.beans.EmployeeBean">
+		<property name="empId" value="125" />
+		<property name="empName" value="Ripon Oza" />
+		<property name="empDesignation" value="java-Developer" />
+		<property name="empSalary" value="40000" />
+		<property name="employeeAddress" ref="add" />
+	</bean>
+	
+	<bean id="add" name="address" class="com.nit.beans.AddressBean">
+		<property name="doorNo" value="5" />
+		<property name="streetName" value="JamuguriStreet" />
+		<property name="cityName" value="Tezpur" />
+	</bean>
+	
+	<bean id="cust" name="customer" class="com.nit.beans.CustomerBean">
+		<property name="customerName" value="NareshCustomar" />
+		<property name="customerID" value="CUST123" />
+		<property name="customerLocation" value="Hyderabad" />
+	</bean>
+	
+</beans>
