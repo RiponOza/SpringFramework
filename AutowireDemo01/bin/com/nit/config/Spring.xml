@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="sample" name="sampleBean" class="com.nit.beans.SampleBean" autowire="constructor">
+		<costructor-arg name="status" value="This is SampleBean Class"/>
+	</bean>
+	
+	<bean id="tb" class="com.nit.beans.TestBean">
+	  <costructor-arg name="test" value="This is Test class object01"/>
+	</bean>
+		
+</beans>
