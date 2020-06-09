@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="constructor">
+	
+	<bean id="student" name="st" class="com.nit.spring.beans.Student" >
+		<constructor-arg name="studentId" value="123" />
+		<constructor-arg name="studentName" value="Ripon Oza" />
+	</bean>
+	
+	<bean id="course" name="cor" class="com.nit.spring.beans.Course" autowire="byName"> 
+		<property name="courseId" value="NITCORE123"/>
+		<property name="courseName" value="Spring"/>
+		<property  name="courseFee" value="6000"/>
+	</bean>
+	
+	<bean id="address" name="add" class="com.nit.spring.beans.Address"> 
+	<property name="streetName" value="jamuguriHighWay"/>
+	</bean>
+	
+	<bean id="test" name="testBean" class="com.nit.spring.beans.TestBean" /> 
+		
+</beans>

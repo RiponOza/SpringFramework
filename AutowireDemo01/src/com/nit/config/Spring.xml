@@ -6,11 +6,11 @@
 		http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<bean id="sample" name="sampleBean" class="com.nit.beans.SampleBean" autowire="constructor">
-		<costructor-arg name="status" value="This is SampleBean Class"/>
+		<constructor-arg name="status" value="This is SampleBean Class"/>
 	</bean>
 	
 	<bean id="tb" class="com.nit.beans.TestBean">
-	  <costructor-arg name="test" value="This is Test class object01"/>
+	  <constructor-arg name="test" value="This is Test class object01"/>
 	</bean>
 		
 </beans>
