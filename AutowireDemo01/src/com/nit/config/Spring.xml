@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<beans  xmlns="http://www.springframework.org/schema/beans"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://www.springframework.org/schema/beans
-		http://www.springframework.org/schema/beans/spring-beans.xsd">
-	
-	<bean id="sample" name="sampleBean" class="com.nit.beans.SampleBean" autowire="constructor">
-		<constructor-arg name="status" value="This is SampleBean Class"/>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="sample" name="sampleBean"
+		class="com.nit.beans.SampleBean" autowire="constructor">
+		<constructor-arg name="status"
+			value="This is SampleBean Class" />
 	</bean>
-	
+
 	<bean id="tb" class="com.nit.beans.TestBean">
-	  <constructor-arg name="test" value="This is Test class object01"/>
+		<constructor-arg name="test"
+			value="This is Test class object01" />
 	</bean>
-		
+
+	<context:annotation-config />
+
 </beans>

@@ -8,17 +8,14 @@
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="sample" name="sampleBean"
-		class="com.nit.beans.SampleBean" autowire="constructor">
-		<constructor-arg name="status"
-			value="This is SampleBean Class" />
-	</bean>
-
-	<bean id="tb" class="com.nit.beans.TestBean">
-		<constructor-arg name="test"
-			value="This is Test class object01" />
-	</bean>
-
+	<bean id="employee" class="com.ripon.spring.beans.Employee" />
+	
+	<bean id="employee2" class="com.ripon.spring.beans.Employee" />
+	
+	<bean id="dept" class="com.ripon.spring.beans.Department" />
+	
+	<bean id="address" class="com.ripon.spring.beans.Address" />
+	
 	<context:annotation-config />
 
-</beans>
+</beans>		
