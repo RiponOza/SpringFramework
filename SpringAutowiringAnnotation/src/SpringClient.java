@@ -10,7 +10,7 @@ public class SpringClient {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/ripon/spring/config/Spring.xml");
 		
-		Employee emp = (Employee) context.getBean("employee2");
+		Employee emp = (Employee) context.getBean("employee");
 		
 		emp.displayEmployee();
 	}

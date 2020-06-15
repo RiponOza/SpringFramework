@@ -9,13 +9,29 @@
 		http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean id="employee" class="com.ripon.spring.beans.Employee" />
-	
-	<bean id="employee2" class="com.ripon.spring.beans.Employee" />
-	
+
 	<bean id="dept" class="com.ripon.spring.beans.Department" />
-	
-	<bean id="address" class="com.ripon.spring.beans.Address" />
-	
+
+	<bean id="address1" class="com.ripon.spring.beans.Address">
+		<property name="doorNo" value="67" />
+		<property name="streetName" value="NH75" />
+		<property name="cityName" value="Tezpur" />
+	</bean>
+
+	<bean id="address2" class="com.ripon.spring.beans.Address">
+		<property name="doorNo" value="3" />
+		<property name="streetName" value="NH50" />
+		<property name="cityName" value="Dibrugarh" />
+	</bean>
+
+	<bean id="customer" class="com.ripon.spring.beans.Customer">
+		<property name="customarId" value="Cust99999" />
+		<property name="customerName" value="Deepak Hazarika" />
+	</bean>
+
+
+
+
 	<context:annotation-config />
 
 </beans>		

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		
+		xmlns:p="http://www.springframework.org/schema/p"
+		xmlns:c="http://www.springframework.org/schema/c"
+		xmlns:util="http://www.springframework.org/schema/util"
+		
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd" >
+	
+	<bean id="student" class="com.ripon.spring.beans.Student" p:studentName="Ripon Oza" p:studentId="123" p:testBean-ref="test"/>
+		
+	<bean id="test" class="com.ripon.spring.beans.TestBean" c:testId="404" c:testStatus="File not found error." c:address-ref="address" />
+	
+	<bean id="address" class="com.ripon.spring.beans.Address" p:city="Tezpur" p:pin="784180" />
+		
+</beans>

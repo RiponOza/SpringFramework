@@ -10,15 +10,6 @@ public class Department {
 	@Value("Information Technology")
 	private String deptName;
 
-	// setters
-	public void setDeptId(int deptId) {
-		this.deptId = deptId;
-	}
-
-	public void setDeptName(String deptName) {
-		this.deptName = deptName;
-	}
-
 	// business logic
 	public void displayDepartment() {
 		System.out.println("Dept detail :--> " + deptId + "  " + deptName + "\n");

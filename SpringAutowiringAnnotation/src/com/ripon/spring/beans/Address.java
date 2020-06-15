@@ -4,11 +4,8 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class Address {
 
-	@Value("3")
 	private String doorNo;
-	@Value("NH32")
 	private String streetName;
-	@Value("TEzpur")
 	private String cityName;
 
 	// setters

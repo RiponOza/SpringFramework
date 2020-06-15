@@ -1,4 +1,4 @@
-package com.ripon.MavenExample001;
+package com.ripon.SpringNamespaces;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -34,6 +34,5 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
-        System.out.println("Welcome to Maven Test");
     }
 }
