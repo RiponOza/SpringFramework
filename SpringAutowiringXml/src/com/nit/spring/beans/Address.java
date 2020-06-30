@@ -5,6 +5,7 @@ public class Address {
 	private String streetName;
 	private String cityName;
 	
+	// getters and setters ::::::::::::::::::::::
 	public String getStreetName() {
 		return streetName;
 	}
@@ -18,6 +19,7 @@ public class Address {
 		this.cityName = cityName;
 	}
 	
+	// business method :::::::::::::::::::::::::
 	public void displayAddress() {
 		System.out.println("Address detials :---> " + streetName + "  " + cityName + "\n");
 	}

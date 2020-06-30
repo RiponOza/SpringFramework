@@ -10,6 +10,7 @@ public class Student {
 	
 	
 	
+	// parameterized constructor ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	public Student(int studentId, String studentName, Course course, Address address) {
 		this.studentId = studentId;
 		this.studentName = studentName;
@@ -18,7 +19,7 @@ public class Student {
 	}
 
 
-
+	// business method :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	public void displayStudentInfo() {
 		System.out.println("Student detials :---> " + studentId + "  " + studentName + "\n" );
 		course.displayCourse();

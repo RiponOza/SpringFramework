@@ -8,7 +8,10 @@
 		xmlns:util="http://www.springframework.org/schema/util"
 		
 		xsi:schemaLocation="http://www.springframework.org/schema/beans
-		http://www.springframework.org/schema/beans/spring-beans.xsd" >
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util
+		http://www.springframework.org/schema/util/spring-util.xsd
+		">
 	
 	<bean id="student" class="com.ripon.spring.beans.Student" p:studentName="Ripon Oza" p:studentId="123" p:testBean-ref="test"/>
 		
@@ -16,4 +19,11 @@
 	
 	<bean id="address" class="com.ripon.spring.beans.Address" p:city="Tezpur" p:pin="784180" />
 		
+	<util:properties id="properties" location="classpath:Database1.properties" ignore-resource-not-found="true"/>
+	
+	<util:list id="myList" list-class="java.util.LinkedList" value-type="java.lang.String" >
+	<value>Ripon</value>
+	<value>Zaynep</value>
+	<value>Hakan</value>
+	</util:list>	
 </beans>

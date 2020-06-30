@@ -29,9 +29,7 @@
 		<property name="customerName" value="Deepak Hazarika" />
 	</bean>
 
-
-
-
+	
 	<context:annotation-config />
 
 </beans>		
